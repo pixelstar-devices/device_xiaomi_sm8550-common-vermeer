@@ -344,6 +344,9 @@ persist.vendor.radio.add_power_save=1
 persist.vendor.ssr.restart_level=ALL_ENABLE
 persist.vendor.radio.enableadvancedscan=true
 
+# Sensors
+persist.vendor.sensors.debug.hal=0
+
 # USB
 ro.usb.uvc.enabled=true
 
