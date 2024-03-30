@@ -353,3 +353,6 @@ ro.usb.uvc.enabled=true
 
 # Shutdown
 ro.build.shutdown_timeout=0
+
+# WiFi
+wifi.aware.interface=wifi-aware0
