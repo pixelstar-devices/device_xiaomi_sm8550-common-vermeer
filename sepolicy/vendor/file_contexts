@@ -4,6 +4,9 @@
 # EID
 /(vendor|system/vendor)/bin/hw/vendor\.rongcard\.hardware\.eid@1\.0-service u:object_r:vendor_hal_eid_rc_exec:s0
 
+# Fastcharge
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.fastcharge@1\.0-service\.xiaomi   u:object_r:hal_lineage_fastcharge_default_exec:s0
+
 # Fingerprint
 /data/vendor/fpc(/.*)? u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/fpdump(/.*)? u:object_r:vendor_fingerprint_data_file_fpdump:s0
