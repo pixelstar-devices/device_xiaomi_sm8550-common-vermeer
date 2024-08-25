@@ -29,6 +29,10 @@
         <item>"wlan0"</item>
     </string-array>
 
+    <!-- Pocket Lock -->
+    <string name="config_pocketJudgeVendorSensorName">xiaomi.sensor.nonui</string>
+    <item name="config_pocketJudgeVendorSensorValue" format="float" type="dimen">2.0</item>
+
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          USB interfaces.  If the device doesn't want to support tething over USB this should
          be empty.  An example would be "usb.*" -->
