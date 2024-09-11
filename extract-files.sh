@@ -65,7 +65,7 @@ function blob_fixup() {
             ;;
         product/etc/permissions/vendor.qti.hardware.data.connection-V1*.xml)
             sed -i 's/xml version="2.0"/xml version="1.0"/g' "${2}"
-           ;;
+            ;;
         odm/etc/camera/aivsModel_6C06C006 | odm/lib64/libmialgo_aisn.so)
             split --bytes=20M -d "${2}" "${2}".part
             ;;
@@ -88,10 +88,13 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
         vendor/lib64/c2.dolby.client.so)
-            "${PATCHELF}" --add-needed "dolbycodec_shim.so" "${2}"
+            grep -q "dolbycodec_shim.so" "${2}" || "${PATCHELF}" --add-needed "dolbycodec_shim.so" "${2}"
             ;;
         vendor/etc/seccomp_policy/qwesd@2.0.policy)
             echo "pipe2: 1" >> "${2}"
+            ;;
+        vendor/lib64/libqcodec2_core.so)
+            grep -q "qcodec2_shim.so" "${2}" || "${PATCHELF}" --add-needed "qcodec2_shim.so" "${2}"
             ;;
     esac
 }

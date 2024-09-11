@@ -9,3 +9,9 @@ cc_library_shared {
     srcs: ["dolbycodec_shim.c"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "qcodec2_shim",
+    srcs: ["qcodec2_shim.c"],
+    vendor: true,
+}
