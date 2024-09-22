@@ -9,13 +9,9 @@ LOCAL_OVERRIDES_PACKAGES := \
     Etar \
     ExactCalculator \
     Jelly \
-    Glimpse \
-    Music \
     Seedvault \
     Updater \
-    CalculatorGoogle \
     CalendarGoogle \
-    LatinImeGoogle \
     MarkupGoogle \
     MlkitBarcodeUIPrebuilt \
     NgaResources \
@@ -32,12 +28,10 @@ LOCAL_OVERRIDES_PACKAGES := \
     PrebuiltGmsCoreSc_GoogleCertificates \
     PrebuiltGmsCoreSc_MapsDynamite \
     PrebuiltGmsCoreSc_MeasurementDynamite \
-    GooglePartnerSetup \
     GoogleRestore \
     Velvet \
     WellbeingPrebuilt \
-    GoogleFeedback \
-    SetupWizard \
+    GoogleFeedback
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
