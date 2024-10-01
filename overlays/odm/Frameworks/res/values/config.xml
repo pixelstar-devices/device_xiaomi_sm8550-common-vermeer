@@ -99,13 +99,13 @@
     <bool name="config_enableHapticTextHandle">true</bool>
 
     <!-- Type of the tap sensor. Empty if tap is not supported. -->
-    <string name="config_dozeTapSensorType" translatable="false">co.aospa.sensor.single_tap</string>
+    <string name="config_dozeTapSensorType" translatable="false">co.lineage.sensor.single_tap</string>
 
     <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
-    <string name="config_dozeDoubleTapSensorType" translatable="false">co.aospa.sensor.double_tap</string>
+    <string name="config_dozeDoubleTapSensorType" translatable="false">co.lineage.sensor.double_tap</string>
 
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
-    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">co.aospa.sensor.udfps</string>
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">co.lineage.sensor.udfps</string>
 
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportScreenOffUdfps">true</bool>
