@@ -22,6 +22,9 @@
 # Sensors
 /(vendor|system/vendor)/bin/sensor-notifier u:object_r:vendor_sensor_notifier_exec:s0
 
+# Touch
+/vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi              u:object_r:hal_lineage_touch_default_exec:s0
+
 # SLA
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.sla\.service\@1\.0-service u:object_r:hal_slaservice_qti_exec:s0
 
