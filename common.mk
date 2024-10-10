@@ -521,12 +521,11 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors-service.xiaomi-multihal \
+    android.hardware.sensors@2.1-service.xiaomi-multihal \
     libsensorndkbridge \
-    sensor-notifier \
-    sensors.xiaomi.v2
+    sensors.xiaomi.v2 \
+    sensors.dynamic_sensor_hal
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
