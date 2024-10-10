@@ -56,7 +56,6 @@
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/framework/framework.jar"</item>
         <item>"/system/framework/services.jar"</item>
-        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
         <item>"/vendor/lib64/libhwui.so"</item>
         <item>"/vendor/lib64/libllvm-qgl.so"</item>
         <item>"/vendor/lib64/libllvm-glnext.so"</item>
