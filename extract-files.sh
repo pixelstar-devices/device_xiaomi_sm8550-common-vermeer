@@ -92,6 +92,13 @@ function blob_fixup() {
             ;;
         vendor/etc/seccomp_policy/qwesd@2.0.policy)
             echo "pipe2: 1" >> "${2}"
+            echo -e "\ngettid: 1" >> "${2}"
+            ;;
+        vendor/lib64/vendor.libdpmframework.so)
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v34.so" "${2}"
+            ;;
+        vendor/etc/seccomp_policy/modemManager.policy | vendor/etc/seccomp_policy/atfwd@2.0.policy | vendor/etc/seccomp_policy/wfdhdcphalservice.policy)
+            echo -e "\ngettid: 1" >> "${2}"
             ;;
         vendor/lib64/libqcodec2_core.so)
             grep -q "qcodec2_shim.so" "${2}" || "${PATCHELF}" --add-needed "qcodec2_shim.so" "${2}"
