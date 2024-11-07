@@ -152,6 +152,10 @@ vendor.qc2audio.per_frame.flac.dec.enabled=true
 vendor.qc2audio.suspend.enabled=true
 vendor.voice.path.for.pcm.voip=true
 
+# Sensors
+ro.vendor.sensors.xiaomi.single_tap=true
+ro.vendor.sensors.xiaomi.udfps=true
+
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.idle_cur_ma=6
