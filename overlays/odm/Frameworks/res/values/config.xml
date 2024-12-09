@@ -135,9 +135,6 @@
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
     <string name="config_dozeUdfpsLongPressSensorType" translatable="false">co.lineage.sensor.udfps</string>
 
-    <!-- Whether devices suports in-display fingerprint when screen is off -->
-    <bool name="config_supportScreenOffUdfps">true</bool>
-
     <!-- Whether to intercept inputs on screen off -->
     <bool name="config_enableKeyHandler">true</bool>
     <!-- Gestures' key codes. If the gesture is not supported set it to 0. -->
@@ -154,4 +151,7 @@
              8 - Camera
              9 - Dialer -->
     <integer name="config_doubleTapDefault">1</integer>
+
+    <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
+    <integer name="config_udfps_illumination_transition_ms">0</integer>
 </resources>
