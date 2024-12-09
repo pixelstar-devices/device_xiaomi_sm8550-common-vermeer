@@ -305,6 +305,13 @@ drm.service.enabled=true
 # FM
 vendor.hw.fm.init=0
 
+# Fingerprint
+ro.hardware.fp.fod.location=low
+ro.hardware.fp.fod.lowlight.brightness.threshold=411
+ro.hardware.fp.fod.lowlight.lux.threshold=3
+ro.hardware.fp.fod.touch.ctl.version=2.0
+ro.hardware.fp.fod=true
+
 # Fling
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
