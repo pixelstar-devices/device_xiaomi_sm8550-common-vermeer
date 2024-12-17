@@ -422,6 +422,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays (Qssi)
 PRODUCT_PACKAGES += \
+    CarrierConfigResCommon_Sys \
     FrameworksResCommon_Sys \
     QCOMGPSFrameworksOverlay \
     SettingsResCommon_Sys \
