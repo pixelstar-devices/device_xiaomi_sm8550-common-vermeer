@@ -61,68 +61,18 @@
         <item>"/vendor/lib64/libllvm-glnext.so"</item>
     </string-array>
 
-    <!-- Vibrator pattern for feedback about a long screen/key press. -->
-    <integer-array name="config_longPressVibePattern">
-        <item>0</item>
-        <item>1</item>
-        <item>20</item>
-        <item>21</item>
-    </integer-array>
-
-    <!-- Vibrator pattern for feedback about touching a virtual key. -->
-    <integer-array name="config_virtualKeyVibePattern">
-        <item>0</item>
-        <item>10</item>
-        <item>20</item>
-        <item>30</item>
-    </integer-array>
-
-    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
-         manually by the user. Off by default, since the expected haptic feedback may not be
-         available on some devices. -->
-    <bool name="config_enableHapticTextHandle">true</bool>
-
-    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap. -->
-    <integer-array name="config_keyboardTapVibePattern">
-        <item>40</item>
-    </integer-array>
-
-    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
-    <integer-array name="config_availableColorModes">
-        <item>258</item> <!-- vivid -->
-        <item>256</item> <!-- saturated -->
-        <item>257</item> <!-- standard -->
-        <item>269</item> <!-- original -->
-        <item>268</item> <!-- p3 -->
-        <item>267</item> <!-- srgb -->
-    </integer-array>
-
-    <!-- Safe headphone volume index. When music stream volume is below this index
-         the SPL on headphone output is compliant to EN 60950 requirements for portable music
-         players. -->
-    <integer name="config_safe_media_volume_index">100</integer>
-
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
 
-    <!-- Flag indicating which package name can access the persistent data partition -->
-    <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
-
-    <!-- the number of the max cached processes in the system. -->
-    <integer name="config_customizedMaxCachedProcesses">64</integer>
-
-    <!-- Whether to enable Lineage Health Service -->
-    <bool name="config_lineageHealthSupported">true</bool>
-
     <!-- The default refresh rate for a given device. If a non-zero value is set for
          config_defaultPeakRefreshRate, then config_defaultRefreshRate may be set to 0, in that case
          the value set for config_defaultPeakRefreshRate will act as the default peak frame rate -->
-    <integer name="config_defaultRefreshRate">0</integer>
+    <integer name="config_defaultRefreshRate">144</integer>
 
     <!-- The default peak refresh rate for a given device. Change this value if you want to allow
          for higher refresh rates to be automatically used out of the box -->
-    <integer name="config_defaultPeakRefreshRate">120</integer>
+    <integer name="config_defaultPeakRefreshRate">240</integer>
 
     <!-- Flag indicating whether the surfaceflinger has limited
      alpha compositing functionality in hardware.  If set, the window
